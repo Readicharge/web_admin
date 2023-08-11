@@ -91,9 +91,7 @@ const LabourRateForm = () => {
         number_of_installs: i + 1,
         service_id: selectedService,
       };
-      if (i === 0) setChartData1(data.price_statewise); // Set chartData1
-      else if (i === 1) setChartData2(data.price_statewise); // Set chartData2
-      else if (i === 2) setChartData3(data.price_statewise); // Set chartData3
+    
       await createLabourRate(data);
     }
 
